@@ -1,0 +1,43 @@
+```
+Pedir al usuario que ingrese dos números
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+Calcular el mayor de los dos números usando un operador ternario
+mayor = num1 if num1 > num2 else num2
+
+Imprimir el resultado
+print("El mayor de los dos números es:", mayor)
+```
+```
+def buscar_palabra(palabra, *args):
+    resultado = "Encontrada" if palabra in args else "No encontrada"
+    print(f"La palabra '{palabra}' está {resultado} en la lista {args}.")
+
+buscar_palabra('hola', 'mundo', 'hola', 'bar')
+```
+```
+def es_par_o_impar(numero):
+    resultado = "Par" if numero % 2 == 0 else "Impar"
+    print(f"El número {numero} es {resultado}.")
+
+Ejemplo de uso
+es_par_o_impar(10)  # Salida: El número 10 es Par.
+es_par_o_impar(11)  # Salida: El número 11 es Impar.
+```
+```
+def calcular_promedio(*args):
+    promedio = sum(args) / len(args) if args else 0
+    print(f"El promedio es: {promedio}")
+
+Ejemplo de uso
+calcular_promedio(10, 20, 30, 40, 50)
+```
+```
+def calcular_promedio(*args):
+    if not args:
+        print("Error: Debes proporcionar al menos un número.")
+        return
+    promedio = sum(args) / len(args)
+    print(f"El promedio es: {promedio}")
+```
